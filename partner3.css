@@ -9,6 +9,7 @@ h2 {
 	margin: none;
 /*	border: 1px solid black;*/
 }
+
 .navbar {
 	border-top: 4px solid #26ce61;
 	border-bottom: 3px solid #e9eaee;
@@ -111,6 +112,14 @@ a:hover {
 	display: none;
 }
 
+#mySidenav {
+	display: none;
+}
+
+span {
+	display: none;
+}
+
 @media screen and (max-width: 1250px) {
 	h2 {
 		font-size: 20px;
@@ -126,6 +135,7 @@ a:hover {
 	.navbar {
 		height: 90px;
 	}
+
 @media screen and (max-width: 900px) {
 h2 {
 	font-size: 16px;
@@ -142,6 +152,7 @@ a {
 	height: 75px;
 	position: fixed;
 }
+
 @media screen and (max-width: 675px) {
 h2 {
 	font-size: 14px;
@@ -180,11 +191,14 @@ a {
 .links-container {
 	display: none;
 }
-
+#mySidenav {
+	display: inline-block;
+}
 span {
 	position: absolute;
 	top: 20px;
 	right: 10px;
+	display: block;
 }
 
 body {
