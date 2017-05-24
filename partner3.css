@@ -13,6 +13,7 @@ h2 {
 	margin: none;
 /*	border: 1px solid black;*/
 }
+
 .navbar {
 	border-top: 4px solid #26ce61;
 	border-bottom: 3px solid #e9eaee;
@@ -137,6 +138,23 @@ a:hover {
 	font-family: 'Gotham';
 	src: url("fonts/gothammedium-webfont.ttf") format("truetype");
 }
+
+.bar {
+	display: none;
+}
+
+.vertical-navbar {
+	display: none;
+}
+
+#mySidenav {
+	display: none;
+}
+
+span {
+	display: none;
+}
+
 @media screen and (max-width: 1250px) {
 	.info-section {
 		display: none;
@@ -155,6 +173,7 @@ a:hover {
 	.navbar {
 		height: 90px;
 	}
+
 @media screen and (max-width: 900px) {
 	h2 {
 		font-size: 16px;
@@ -172,6 +191,7 @@ a:hover {
 		position: fixed;
 	}
 }
+
 @media screen and (max-width: 675px) {
 	h2 {
 		font-size: 14px;
@@ -188,4 +208,80 @@ a:hover {
 		height: 60px;
 		position: fixed;
 	}
+
+}
+
+@media screen and (max-width: 768px) {
+h2 {
+	font-size: 16px;
+	padding: 3px;
+}
+a {
+	padding: 2px;
+}
+.logo {
+	height: 55px;
+	width: 90px;
+}
+.navbar {
+	height: 75px;
+	position: fixed;
+}
+@media screen and (max-width: 675px) {
+.links-container {
+	display: none;
+}
+#mySidenav {
+	display: inline-block;
+}
+span {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	display: block;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 }
