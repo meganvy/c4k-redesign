@@ -1,15 +1,104 @@
 body {
 	padding: 0;
 	margin: 0;
-	background-color: #fafafa;
+	background-color: rgba(250, 250, 250, 0.8);
+	font-family: 'Gotham', Helvetica;
+	height: 2000px;
+}
+h2 {
+	padding: 10px;
+	margin: none;
+/*	border: 1px solid black;*/
 }
 .navbar {
+	border-top: 4px solid #26ce61;
+	border-bottom: 3px solid #e9eaee;
 	width: 100%;
-	height: 150px;
 	background-color: #ffffff;
+	height: 120px;
+	vertical-align: top;
+	position: sticky;
+	top: 0;
+/*	border: 1px solid black;*/
 }
 .logo {
+	width: 180px;
+	height: 100px;
+	padding-top: 10px;
+}
+.nav {
 	display: inline-block;
-	width: 250px;
-	height: 125px;
+	margin-top: 5px;
+}
+a {
+	padding: 7px;
+	text-decoration: none;
+	color: #333333;
+/*	border: 1px solid black;*/
+}
+a:hover {
+	background-color: #f0f0f0;
+}
+.nav-content{
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+/*	border: 1px solid black;*/
+}
+.links-container {
+	vertical-align: top;
+}
+@font-face {
+	font-family: 'Gotham';
+	src: url("fonts/gothammedium-webfont.ttf") format("truetype");
+}
+@media screen and (max-width: 1250px) {
+	h2 {
+		font-size: 20px;
+		padding: 6px;
+	}
+	a {
+		padding: 3px;
+	}
+	.logo {
+		height: 70px;
+		width: 120px;
+	}
+	.navbar {
+		height: 90px;
+	}
+@media screen and (max-width: 900px) {
+h2 {
+	font-size: 16px;
+	padding: 3px;
+}
+a {
+	padding: 2px;
+}
+.logo {
+	height: 55px;
+	width: 90px;
+}
+.navbar {
+	height: 75px;
+	position: fixed;
+}
+@media screen and (max-width: 675px) {
+h2 {
+	font-size: 14px;
+	padding: 2px;
+}
+a {
+	padding: 2px;
+}
+.logo {
+	height: 35px;
+	width: 60px;
+}
+.navbar {
+	height: 60px;
+	position: fixed;
+}
 }
