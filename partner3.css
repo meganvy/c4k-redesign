@@ -8,12 +8,21 @@ h2 {
 	padding: 0;
 	margin: 0;
 }
+.footer {
+	height: 300px;
+	width: 100%;
+	border-top: 5px solid #26ce61;
+}
 #shadow {
 	padding: 10px;
 	margin: none;
 /*	border: 1px solid black;*/
 }
-
+.footer-section {
+	display: inline-block;
+	width: 30%;
+	border: 1px solid black;
+}
 .navbar {
 	border-top: 4px solid #26ce61;
 	border-bottom: 3px solid #e9eaee;
@@ -40,6 +49,10 @@ a {
 	color: #333333;
 /*	border: 1px solid black;*/
 }
+p {
+	margin: 0;
+	padding: 0;
+}
 a:hover {
 	background-color: #f0f0f0;
 }
@@ -52,6 +65,7 @@ a:hover {
 /*	border: 1px solid black;*/
 }
 .links-container {
+	margin-top: 30px;
 	vertical-align: top;
 }
 .circle-section{
@@ -111,7 +125,8 @@ a:hover {
 
 }
 .top-text {
-	padding: 7px;
+	list-style: none;
+	padding: 15px;
 	position: absolute;
 	top: 500px;
 	left: 110px;
@@ -128,7 +143,7 @@ a:hover {
 	right: 100px;
 	top: 300px;
 	width: 300px;
-	height: 400px;
+	height: 370px;
 	color: #FFF;
 	background-color: rgba(0, 0, 0, 0.5);
 	text-decoration: none;
@@ -157,6 +172,12 @@ span {
 
 @media screen and (max-width: 1250px) {
 	.info-section {
+		display: none;
+	}
+	.links-container {
+		margin-top: 15px;
+	}
+	.circle-section {
 		display: none;
 	}
 	h2 {
@@ -239,6 +260,7 @@ span {
 	top: 20px;
 	right: 10px;
 	display: block;
+	z-index: 9;
 }
 
 body {
